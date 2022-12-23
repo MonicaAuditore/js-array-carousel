@@ -65,6 +65,10 @@ main {
   display: none;
 }
 
+.uno img {
+  object-position: 0px -149px;
+}
+
 .tre img {
   object-position: -495px 0px;
 }

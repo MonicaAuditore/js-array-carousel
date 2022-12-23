@@ -38,9 +38,12 @@ const allSlides = document.querySelectorAll(".slide");
 console.log("allSlides", allSlides);
 
 let currentSlide = 0; // Prima slide attiva
+
+allSlides[0].classList.add("uno");
 allSlides[2].classList.add("tre");
 allSlides[3].classList.add("quattro");
 allSlides[4].classList.add("cinque");
+
 allSlides[0].classList.add("current");
 
 const previousArrow = document.querySelector(".previous");
