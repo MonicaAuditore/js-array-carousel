@@ -42,7 +42,7 @@ main {
 .next {
   width: 30px;
   height: 30px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.712);
   line-height: 30px;
   position: absolute;
   border-radius: 50%;
@@ -52,12 +52,12 @@ main {
 
 .previous {
   left: 50%;
-  top: 0;
+  top: 15px;
 }
 
 .next {
   left: 50%;
-  bottom: 0;
+  bottom: 15px;
 }
 
 .hidden {
