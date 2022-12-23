@@ -39,6 +39,8 @@ console.log("allSlides", allSlides);
 
 let currentSlide = 0; // Prima slide attiva
 
+allSlides[0].classList.add("current");
+
 const previousArrow = document.querySelector(".previous");
 const nextArrow = document.querySelector(".next");
 
