@@ -19,6 +19,7 @@ main {
   width: 50%;
   height: 50%;
   overflow: hidden;
+  position: relative;
 }
 
 .carousel .slide {
@@ -34,4 +35,26 @@ main {
 
 .current {
   display: block;
+}
+
+.previous,
+.next {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  line-height: 20px;
+  position: absolute;
+
+  border-radius: 50%;
+  text-align: center;
+}
+
+.previous {
+  left: 50%;
+  top: 0;
+}
+
+.next {
+  left: 50%;
+  bottom: 0;
 }
