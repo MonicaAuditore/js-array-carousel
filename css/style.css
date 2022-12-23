@@ -15,7 +15,7 @@ main {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   width: 50%;
   height: 50%;
   overflow: hidden;
@@ -36,6 +36,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 6px;
 }
 
 .previous,
@@ -62,4 +63,16 @@ main {
 
 .hidden {
   display: none;
+}
+
+.tre img {
+  object-position: -495px 0px;
+}
+
+.quattro img {
+  object-position: -303px 0px;
+}
+
+.cinque img {
+  object-position: 0px -177px;
 }
