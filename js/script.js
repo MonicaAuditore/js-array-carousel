@@ -51,13 +51,24 @@ nextArrow.addEventListener(
     currentSlide = currentSlide + 1;
 
     allSlides[currentSlide].classList.add("current");
+
+    if (currentSlide == allSlides.length - 1) {
+      nextArrow.classList.add("hidden");
+    }
+
+    previousArrow.classList.remove("hidden");
   }
 );
 
 previousArrow.addEventListener("click", function () {
   console.log("ho cliccato su .next");
   allSlides[currentSlide].classList.remove("current");
-  currentSlide = currentSlide + 1;
+  currentSlide = currentSlide - 1;
 
   allSlides[currentSlide].classList.add("current");
+
+  if (currentSlide == 0) {
+    previousArrow.classList.add("hidden");
+  }
+  nextArrow.classList.remove("hidden");
 });
