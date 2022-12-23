@@ -15,5 +15,25 @@ Al termine di questa fase ci ritroveremo con lo stesso slider stilato nella mile
 MILESTONE 3
 Al click dell'utente sulle frecce, il programma cambierà l'immagine attiva, che quindi verrà visualizzata al posto della precedente.*/
 
+const images = [
+  "img/01.webp",
+  "img/02.webp",
+  "img/03.webp",
+  "img/04.webp",
+  "img/05.webp",
+];
 
-const 
+const carouselElement = document.querySelector(".carousel");
+
+for (let index = 0; index < images.length; index++) {
+  console.log(images[index]);
+
+  carouselElement.innerHTML += `<div class="slide">
+                                        <img src="${images[index]}">
+                                    </div>`;
+}
+
+const allSlide = document.querySelectorAll(".slide");
+console.log(allSlide);
+
+document.querySelector(".slide:first-child").classList.add("current;");
