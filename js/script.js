@@ -34,7 +34,23 @@ for (let index = 0; index < images.length; index++) {
                                     </div>`;
 }
 
-const allSlide = document.querySelectorAll(".slide");
-console.log(allSlide);
+const allSlides = document.querySelectorAll(".slide");
+console.log("allSlides", allSlides);
 
-document.querySelector(".slide:first-child").classList.add("current;");
+let currentSlide = 0; // Prima slide attiva
+
+// const previousArrow = document.querySelector(".previous");
+
+const nextArrow = document.querySelector(".next");
+
+nextArrow.addEventListener(
+  "click",
+
+  function () {
+    console.log("ho cliccato su .next");
+    allSlides[currentSlide].classList.remove("current");
+    currentSlide = currentSlide + 1;
+
+    allSlides[currentSlide].classList.add("current");
+  }
+);
