@@ -24,6 +24,7 @@ const images = [
 ];
 
 const carouselElement = document.querySelector(".carousel");
+console.log(carouselElement);
 
 for (let index = 0; index < images.length; index++) {
   console.log(images[index]);
