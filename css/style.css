@@ -60,6 +60,6 @@ main {
   bottom: 0;
 }
 
-/* .hidden {
-  visibility: hidden;
-} */
+.hidden {
+  display: none;
+}

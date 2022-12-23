@@ -39,8 +39,7 @@ console.log("allSlides", allSlides);
 
 let currentSlide = 0; // Prima slide attiva
 
-// const previousArrow = document.querySelector(".previous");
-
+const previousArrow = document.querySelector(".previous");
 const nextArrow = document.querySelector(".next");
 
 nextArrow.addEventListener(
@@ -54,3 +53,11 @@ nextArrow.addEventListener(
     allSlides[currentSlide].classList.add("current");
   }
 );
+
+previousArrow.addEventListener("click", function () {
+  console.log("ho cliccato su .next");
+  allSlides[currentSlide].classList.remove("current");
+  currentSlide = currentSlide + 1;
+
+  allSlides[currentSlide].classList.add("current");
+});
