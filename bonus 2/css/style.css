@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel .slide {
+  width: 100%;
+  height: calc(100% / 5);
+  /* display: none; */
+}
+
+.carousel .slide.current {
+  display: block;
+}
+
+.trasparente {
+  opacity: 0.5;
+}
+
+.carousel .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.previous,
+.next {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.712);
+  line-height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.previous {
+  left: 35%;
+  top: 15px;
+}
+
+.next {
+  left: 35%;
+  bottom: 15px;
+}
+
+.caroselloDestra {
+  background-color: rgb(0, 0, 0);
+
+  height: 321px;
+  overflow: hidden;
+}
+
+.caroselloSinistra {
+  width: 743px;
+
+  background-color: aqua;
+}
+
+/* .hidden {
+  display: none;
+} */
+
+/* .uno img {
+  object-position: 0px -149px;
+}
+
+.tre img {
+  object-position: -495px 0px;
+}
+
+.quattro img {
+  object-position: -303px 0px;
+}
+
+.cinque img {
+  object-position: 0px -177px;
+} */
