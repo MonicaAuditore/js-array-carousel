@@ -68,7 +68,7 @@ nextArrow.addEventListener(
 );
 
 previousArrow.addEventListener("click", function () {
-  console.log("ho cliccato su .next");
+  console.log("ho cliccato su .previous");
   allSlides[currentSlide].classList.remove("current");
   currentSlide = currentSlide - 1;
 
