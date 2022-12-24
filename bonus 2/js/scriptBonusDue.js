@@ -104,6 +104,14 @@ previousArrow.addEventListener(
   }
 );
 
+allSlidesSin[0].classList.add("uno");
+allSlidesSin[2].classList.add("tre");
+allSlidesSin[3].classList.add("quattro");
+allSlidesSin[4].classList.add("cinque");
+
+allSlides[2].classList.add("treDes");
+allSlides[0].classList.add("unoDes");
+
 /*copia
 
 

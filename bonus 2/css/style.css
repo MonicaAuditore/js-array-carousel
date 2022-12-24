@@ -35,7 +35,7 @@ main {
 .caroselloSinistra {
   width: 80%;
   height: 100%;
-  /* background-color: blueviolet; */
+  position: relative;
 }
 
 .caroselloSinistra img {
@@ -43,6 +43,9 @@ main {
   height: 100%;
   object-fit: cover;
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* CAROSELLO DESTRA */
@@ -97,8 +100,12 @@ main {
   display: none;
 }
 
-/* .uno img {
-  object-position: 0px -149px;
+.uno img {
+  object-position: 0px -187px;
+}
+
+.unoDes img {
+  object-position: 0px -44px;
 }
 
 .tre img {
@@ -109,6 +116,10 @@ main {
   object-position: -303px 0px;
 }
 
+.treDes img {
+  object-position: -64px 0px;
+}
+
 .cinque img {
   object-position: 0px -177px;
-} */
+}
